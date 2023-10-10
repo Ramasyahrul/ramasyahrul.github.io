@@ -5,14 +5,25 @@
 }
 
 /* Navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  transition: transform 0.3s;
+  text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.1);
+  background-color: #c0c0c0;
+}
 
+.navbar--hidden {
+  transform: translateY(-63px);
+}
 .navbar-brand {
   font-family: Viga;
   font-size: 25px;
 }
 .nav-link {
   font-family: Poppins;
-  font-size: 18px;
+  font-size: 20px;
   margin-left: 20px;
 }
 .navbar-img svg {
@@ -32,6 +43,8 @@
 }
 .home .container {
   /* background-color: #6b6b6b; */
+  width: 100%;
+  text-shadow: 3px 2px 1px rgba(0, 0, 0, 1);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -45,8 +58,9 @@
 }
 .home .container .box .text-jd {
   font-size: 70px;
-  text-align: center;
-  margin-bottom: 15px;
+  /* text-align: center; */
+  margin-bottom: 25px;
+  margin-top: 30px;
 }
 .home .container .box .box-2 .text-dec {
   font-size: 20px;
@@ -59,6 +73,7 @@
   width: 100%;
 }
 .home .container .box .button-primari {
+  text-shadow: 3px 2px 1px rgba(0, 0, 0, 1);
   margin-top: 20px;
   font-size: 20px;
   color: #fff;
@@ -74,8 +89,9 @@
   background-color: #f2f2f2;
   /* background-color: rgb(236, 233, 233); */
 }
+
 .hero .container .row .col-9 .text-1 {
-  margin-top: 25px;
+  margin-top: 55px;
   font-family: Viga;
   font-size: 65px;
 }
@@ -85,6 +101,8 @@
   margin-top: 45px;
 }
 .hero .container .row .col-3 .button-second {
+  text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.5);
+  margin-top: 25px;
   font-family: Poppins;
   width: 200px;
   height: 50px;
@@ -124,6 +142,7 @@
   font-size: 25px;
 }
 .hero .container-slider {
+  /* position: static; */
   width: 535px;
   height: 410px;
   margin-left: 680px;
@@ -143,6 +162,7 @@
 .slider .container {
   max-width: 1500px;
   width: 95%;
+  margin-top: 20px;
 }
 
 .slider .container .text-jd {
@@ -361,6 +381,7 @@
 
 .footer .container span svg {
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 /* Styles for mobile and tablets */
@@ -409,7 +430,15 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  /* navbar */
+  .navbar .container {
+    width: 90%;
+  }
   /* home */
+  .home {
+    position: relative;
+    width: 100%;
+  }
   .home .container .box {
     width: 90%;
     font-size: 50px;

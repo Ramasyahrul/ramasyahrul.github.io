@@ -25,6 +25,9 @@
     <!-- My css -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- css animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Google Fonts Link For Icons -->
     <link
       rel="stylesheet"
@@ -34,11 +37,11 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body  id="home">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-transparent-tertiary nav-underline">
       <div class="container">
-        <a class="navbar-brand" href="#">Abadi Jaya Perabot</a>
+        <a class="navbar-brand" href="#home">Abadi Jaya Perabot</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -52,10 +55,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#hero">Best Seller</a>
+            <a class="nav-link" href="#slider">Diskon</a>
+            <a class="nav-link" href="#about">About</a>
           </div>
           <span class="navbar-img ms-auto">
             <svg
@@ -104,17 +107,18 @@
     <!-- akhir Navbar -->
 
     <!-- home -->
-    <section class="home" id="home">
+    <section class="home">
       <div class="container">
         <div class="box">
-          <hr style="height: 35px;">
-          <h1 class="text-jd fw-bold"><span class="text-1">TOKO</span> ABADI<br> 
+          <hr style="width: 50%; margin: auto;" data-aos="fade-right">
+          <h1 class="text-jd fw-bold " data-aos="fade-right" data-aos-duration="1000"><span class="text-1">TOKO</span> ABADI<br> 
             JAYA <span class="text-1">PERABOT</span></h1>
             <div class="box-2">
-              <p class="text-dec fw-bold">Menjual berbagai perabotan rumah tangga <br> seperti 
+              <p class="text-dec fw-bold" data-aos="fade-right" data-aos-duration="1000">Menjual berbagai perabotan rumah tangga <br> seperti 
               meja makan, Kursi, Lemari, Sofa dll</p>
             </div>
-            <button type="button" class="button-primari">Daftar</button>
+            <hr style="width: 50%; margin: auto; margin-top: 30px;" data-aos="fade-right">
+            <button type="button" class="button-primari" data-aos="fade-up" data-aos-duration="1000">Daftar</button>
         </div>
       </div>
 
@@ -122,7 +126,7 @@
     <!-- akhir home -->
 <!-- Best seller -->
 <section class="hero" id="hero">
-<div class="container">
+<div class="container" data-aos="fade-up" data-aos-duration="1000">
   <div class="row">
     <div class="col-9">
       <h1 class="text-1">Best Seller</h1>
@@ -132,7 +136,7 @@
     </div>
   </div>
 </div>
-<div class="hal-2 flex">
+<div class="hal-2 flex" data-aos="fade-up" data-aos-duration="1000">
  <div class="container-text">
   <div class="text-dec">
     <p class="text-jd">Produk Unggulan</p>
@@ -146,13 +150,22 @@
   <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/gambar.jpg" class="d-block w-100" alt="...">
+        <img src="img/img-8.jpeg" class="d-block w-100" alt="img-1" style="height: 410px;width: 535px;">
       </div>
       <div class="carousel-item">
-        <img src="img/gambar.jpg" class="d-block w-100" alt="...">
+        <img src="img/gambar.jpg" class="d-block w-100" alt="..." style="height: 410px;">
       </div>
       <div class="carousel-item">
-        <img src="img/gambar.jpg" class="d-block w-100" alt="...">
+        <img src="img/img-2.jpg" class="d-block w-100" alt="..." style="height: 410px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img-4.jpeg" class="d-block w-100" alt="..." style="height: 410px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img-5.jpeg" class="d-block w-100" alt="..." style="height: 410px;">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img-6.jpeg" class="d-block w-100" alt="..." style="height: 410px;">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -172,7 +185,7 @@
 
 <!-- halaman slide -->
 <section class="slider" id="slider">
-  <div class="container">
+  <div class="container" data-aos="fade-up" data-aos-duration="1500">
     <div class="text-jd fw-bold">
       <p class="text-1">Penawaran <br>Terbaik Kami</p>
     </div>
@@ -182,37 +195,58 @@
       </button>
       <ul class="image-list">
         <div class="image-1">
-         <img class="image-item" src="img/img-1.jpg" alt="img-1" />
+         <img class="image-item" src="img/img-4.jpeg" alt="img-1" />
           <div class="text-dec">
            <h3>Spring Bed</h3>
            <h6><s>Rp 2.800.000</s>Rp 2.300.000</h6>
            </div>
         </div>
         <div class="image-2">
-          <img class="image-item" src="img/img-2.jpg" alt="img-2" />
+          <img class="image-item" src="img/img-1.jpg" alt="img-2" />
            <div class="text-dec">
             <h3>Meja Makan</h3>
             <h6><s>Rp 2.300.000</s>Rp 1.000.000</h6>
             </div>
          </div>
          <div class="image-3">
-          <img class="image-item" src="img/img-3.jpg" alt="img-3" />
+          <img class="image-item" src="img/img-5.jpeg" alt="img-3" />
            <div class="text-dec">
-            <h3>Kursi Kantor</h3>
+            <h3>Spring Bed</h3>
             <h6><s>Rp 1.500.000</s>Rp 1.200.000</h6>
             </div>
          </div>
          <div class="image-4">
-          <img class="image-item" src="img/img-2.jpg" alt="img-4" />
+          <img class="image-item" src="img/img-9.jpeg" alt="img-4" />
            <div class="text-dec">
             <h3>Lemari</h3>
             <h6><s>Rp 2.500.000</s>Rp 2.100.000</h6>
             </div>
          </div>
          <div class="image-5">
-          <img class="image-item" src="img/img-1.jpg" alt="img-5" />
+          <img class="image-item" src="img/img-10.jpeg" alt="img-5" />
            <div class="text-dec">
-            <h3>Lemari Kaca</h3>
+            <h3>Rak TV</h3>
+            <h6><s>Rp 1.600.000</s>Rp 1.300.000</h6>
+            </div>
+         </div>
+         <div class="image-6">
+          <img class="image-item" src="img/img-6.jpeg" alt="img-1" />
+           <div class="text-dec">
+            <h3>Spring Bed</h3>
+            <h6><s>Rp 2.800.000</s>Rp 2.300.000</h6>
+            </div>
+         </div>
+         <div class="image-7">
+          <img class="image-item" src="img/img-8.jpeg" alt="img-1" />
+           <div class="text-dec">
+            <h3>Spring Bed</h3>
+            <h6><s>Rp 2.800.000</s>Rp 2.300.000</h6>
+            </div>
+         </div>
+         <div class="image-8">
+          <img class="image-item" src="img/img-7.jpeg" alt="img-5" />
+           <div class="text-dec">
+            <h3>Rak TV</h3>
             <h6><s>Rp 1.600.000</s>Rp 1.300.000</h6>
             </div>
          </div>
@@ -233,7 +267,7 @@
 <!-- halaman about -->
 <section class="about" id="about">
  <div class="container">
-  <div class="text-dec">
+  <div class="text-dec" data-aos="fade-up" data-aos-duration="800">
     <h2 class="text-jd">Menghiasi <br> Rumah Anda</h2>
     <h4 class="text-dec-1">Dengan membuat rumah anda terlihat cantik, akan membuat  
         rumah anda lebih nyaman untuk ditinggali. Toko kami akan <br>    
@@ -242,9 +276,9 @@
     <button type="button" class="button-third">Shop Now</button>
   </div>
   <div class="image">
-    <img src="img/img-1.jpg" alt="img-1" class="img-1">
-    <img src="img/img-2.jpg" alt="img-2" class="img-2"> <br>
-    <img src="img/img-3.jpg" alt="img-2" class="img-3">
+    <img src="img/img-1.jpg" alt="img-1" class="img-1" data-aos="fade-right" data-aos-duration="800">
+    <img src="img/img-2.jpg" alt="img-2" class="img-2"data-aos="fade-left" data-aos-duration="800"> <br>
+    <img src="img/img-3.jpg" alt="img-2" class="img-3" data-aos="fade-right" data-aos-duration="800">
   </div>
 
  </div>
@@ -299,6 +333,7 @@
         />
       </svg>
     </span>
+    <P>Created by Rama Syahrul</P>
   </div>
 </section>
 <!-- akhir footer -->
@@ -328,11 +363,16 @@
    
  
 
-    <!-- js -->
+    <!-- js bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <!-- js aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
